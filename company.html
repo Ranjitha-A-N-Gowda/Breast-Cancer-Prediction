@@ -1,0 +1,79 @@
+<html>
+        <style>
+
+       .imp {
+            background-image:  url('https://img.freepik.com/free-vector/grunge-watercolor-background-using-pastel-colours_1048-6530.jpg?w=740&t=st=1694341998~exp=1694342598~hmac=fb43c3828dc378eb1599134a707771b82a9e112a75710a322f61c2cc0e1f9887');
+            background-size: 1850px 2000px;
+            background-position: center;
+       }
+
+    .content-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 1vh;
+    }
+    
+    .form-container {
+      background-color: white; 
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      max-width: 600px;
+      width: 100%;
+    }
+
+
+    marquee {
+      width: 500px;
+      color: white;
+    }
+
+         </style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand">Internship Project</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'index1' %}">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'company' %}">About Company</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'Cancer' %}">Biopised Tissue</a>
+              </li>
+          </ul>
+        </div>
+      </nav>
+
+    <div class="imp">
+        <center>
+            <div class="content-container"></div>
+            <marquee width="100%" direction="left">ABOUT COMPANY</marquee>
+            <div class="form-container">
+            {%csrf_token %}
+            <img src="https://yt3.googleusercontent.com/F6b1w0Omw1SP7qq214lreTTjRmVT8cCY1FmTK-KjyZayUETHzcv83QEMybfDV_wCxuYa_fU=w1060-fcrop64=1,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj" width="500" height="200">
+            <p>The company offers broad range of customized software applications powered by concrete technology and industry expertise.</p>
+            <p>It also offers end to end embedded solutions and services.</p>
+            <p>They deal with broad range of product development along with customized features ensuring at most customer satisfaction and also empower individual with knowledge, skills and competencies that assist them to escalate as integrated individuals with a sense of commitment and dedication.</p>
+        <h3>Contact Details:</h3>
+        <h4>Address:</h4>
+        <p>#17, ATK complex, 4th Floor, Acharya College Main Road, Beside Karur Vysya Bank, Guttebasaveshwaranagar, Chikkabanvara, Bengaluru, Karnataka- 560090</p>
+        <h4>Email:</h4>
+        <p>support@karunadutechnologies.com</p>
+        </div>
+    </div>
+        </center>
+    </div>
+</html>
+
+
+
